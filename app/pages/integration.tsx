@@ -1,8 +1,8 @@
 import { useMemo, useState } from 'react';
 import { useGetTypeCode } from './hooks/thirdTaskHooks';
-import {Pagination, PaginationItem, PaginationCursor} from "@nextui-org/pagination";
+import {Pagination} from "@nextui-org/pagination";
 
-export default function ThirdTask() {
+export default function integration() {
     const [currentPage, setCurrentPage] = useState<number>(1);
     const itemsPerPage = 10;
 
@@ -28,7 +28,7 @@ export default function ThirdTask() {
                     {displayData?.map((res: any, idx: number) => (
                         <tr key={idx}>
                             <td className='text-center w-1/5 border border-slate-700'>{res?.id}</td>
-                            <td className='border border-slate-700'>{res?.title}</td>
+                            <td className='border border-slate-700 capitalize'>{res?.title}</td>
                         </tr>
                     ))}
                     </tbody>

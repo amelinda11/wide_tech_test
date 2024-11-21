@@ -20,7 +20,7 @@ const PERSONAL_INFORMATION_FORM_DEFAULT_VALUES = {
   } as PersonalInformationFormValues;
   
 
-export default function SecondTask() {
+export default function Validation() {
     const methods = useForm<PersonalInformationFormValues>({
         defaultValues: PERSONAL_INFORMATION_FORM_DEFAULT_VALUES,
         mode: 'onBlur',

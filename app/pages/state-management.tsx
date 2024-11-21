@@ -1,8 +1,8 @@
-import { Button } from '@nextui-org/react';
 import { useEffect, useState } from 'react';
+import { Button } from '@nextui-org/react';
 import Alert from './alert';
 
-export default function FirstTask() {
+export default function StateManagement() {
     const [count, setCount] = useState<number>(1);
     const [showAlert, setShowAlert] = useState<boolean>(false);
 
