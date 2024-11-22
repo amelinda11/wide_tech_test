@@ -142,7 +142,7 @@ export default function Validation() {
 
 const StyledWrapperCard = styled.div`
     padding: 40px;
-    border: 3px solid #334155;
+    border: 2px solid #fff;
     border-radius: 13px;
     min-width: 500px;
     box-shadow: 4px 3px 19px 0px rgba(0,0,0,0.28);

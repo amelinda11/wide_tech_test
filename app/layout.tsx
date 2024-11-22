@@ -4,7 +4,6 @@ import React from 'react';
 import Head from 'next/head';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import { NextUIProvider } from '@nextui-org/react';
-import { BrowserRouter as Router } from 'react-router-dom';
 import './globals.css';
 
 const queryClient = new QueryClient();
@@ -19,11 +18,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <body>
-                <Router>
-                    <NextUIProvider>
-                        <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>
-                    </NextUIProvider>
-                </Router>
+                <NextUIProvider>
+                    <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>
+                </NextUIProvider>
             </body>
         </html>
     );

@@ -17,8 +17,9 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to bottom, transparent, rgb(0 0 0)) rgb(63 60 60)
+  color: #374259;
+  background: hsla(207, 34%, 60%, 1);
+  background: linear-gradient(15deg, hsla(207, 34%, 60%, 1) 70%, hsla(0, 0%, 100%, 1) 100%);
 }
 
 input {

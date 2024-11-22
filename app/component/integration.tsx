@@ -17,18 +17,18 @@ export default function integration() {
     return (
         <>
             <div className="w-full md:w-[700px]">
-                <table className="w-full border-spacing-2 border-separate border border-slate-500">
+                <table className="w-full border-spacing-2 border-separate border border-gray-100">
                     <thead>
                         <tr>
-                        <th className='border border-slate-600'>ID</th>
-                        <th className='border border-slate-600'>Title</th>
+                        <th className='border border-gray-200'>ID</th>
+                        <th className='border border-gray-200'>Title</th>
                         </tr>
                     </thead>
                     <tbody>
                     {displayData?.map((res: any, idx: number) => (
                         <tr key={idx}>
-                            <td className='text-center w-1/5 border border-slate-700'>{res?.id}</td>
-                            <td className='border border-slate-700 capitalize'>{res?.title}</td>
+                            <td className='text-center w-1/5 border border-gray-200'>{res?.id}</td>
+                            <td className='border border-gray-200 capitalize'>{res?.title}</td>
                         </tr>
                     ))}
                     </tbody>
