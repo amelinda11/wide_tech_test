@@ -1,9 +1,10 @@
 "use client";
 
 import {Tabs, Tab} from "@nextui-org/react"; 
-import StateManagement from './pages/state-management';
-import Validation from './pages/validation';
-import Integration from './pages/integration';
+import StateManagement from './component/state-management';
+import Validation from './component/validation';
+import Integration from './component/integration';
+import RoutingSection from "./component/routing";
 
 export default function Home() {
     return (
@@ -18,7 +19,9 @@ export default function Home() {
                 <Tab title="Integration Section" className="w-full flex flex-col items-center">
                     <Integration/>
                 </Tab>
-             
+                <Tab title="Routing Section" className="w-full flex flex-col items-center">
+                    <RoutingSection/>
+                </Tab>
             </Tabs>
         </main>
     )

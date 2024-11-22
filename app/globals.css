@@ -38,3 +38,16 @@ input.error {
   background-color: #fff1f1;
   border: 1px solid #ef4444;
 }
+
+.navbar-menu-cstm {
+  background: #fff;
+}
+
+
+@media (max-width: 768px) {
+  .navbar-menu-cstm {
+    --navbar-height: 12rem !important;
+    margin: 0 12px;
+    width: 94.2%;
+  }
+}
